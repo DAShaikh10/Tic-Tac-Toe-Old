@@ -1,0 +1,33 @@
+/********** CSS **********/
+.container {
+  justify-self: center;
+  position: relative;
+}
+
+.container > p {
+  background-color: #06802f;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0 0 2em;
+  padding: 0.8rem 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.container > picture > img {
+  position: absolute;
+  bottom: 2em;
+  height: 4em;
+  width: 3.5em;
+}
+
+.container :first-child > img {
+  left: -2em;
+}
+
+.container :last-child > img {
+  right: -2em;
+}

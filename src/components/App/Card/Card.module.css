@@ -1,0 +1,22 @@
+.card {
+  background-color: var(--bg-color);
+  border-radius: 0.5em;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  height: 5em;
+  padding: 1em;
+  width: 6em;
+}
+
+.card p {
+  margin: 0.8em 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card p.score {
+  font-size: large;
+  font-weight: 600;
+  margin: 0.2em 0 0;
+}

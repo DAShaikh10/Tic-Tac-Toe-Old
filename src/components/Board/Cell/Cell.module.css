@@ -1,0 +1,68 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 5 version
+*/
+
+/********** CSS **********/
+.button {
+  background-color: #43115b;
+  border: none;
+  border-radius: 0.5em;
+  color: #43115b;
+  cursor: pointer;
+  height: 6em;
+  width: 6em;
+  opacity: 1;
+  -webkit-transition: opacity 150ms ease;
+  -o-transition: opacity 150ms ease;
+  transition: opacity 150ms ease;
+}
+
+.button:hover {
+  background-color: #5a1e76;
+  color: #5a1e76;
+}
+
+.button .reset-button {
+  opacity: 0;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.x-clicked,
+.x-clicked:hover {
+  background-color: #43115b;
+  border: none;
+  border-radius: 0.5rem;
+  color: #72cff9;
+  cursor: default;
+  font-size: 5em;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  height: 5rem;
+  width: 5rem;
+  -webkit-transition: color 150ms ease-in-out;
+  -o-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+
+.o-clicked,
+.o-clicked:hover {
+  background-color: #43115b;
+  border: none;
+  border-radius: 0.5rem;
+  color: #dcbf3f;
+  cursor: default;
+  font-size: 5em;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  height: 5rem;
+  width: 5rem;
+  -webkit-transition: color 150ms ease-in-out;
+  -o-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}

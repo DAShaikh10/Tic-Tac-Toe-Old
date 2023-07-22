@@ -1,0 +1,190 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 5 version
+*/
+
+/********** CSS **********/
+.container {
+  background-color: #5a1e76;
+  border-radius: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 96vh;
+  width: 93vw;
+  position: relative;
+}
+
+.container > .title {
+  color: #dcbf3f;
+  font-family: "Fredoka", sans-serif;
+  font-size: 20em;
+  font-weight: 700;
+  overflow: hidden;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+
+.container > .title > p {
+  line-height: 13rem;
+  margin: 0 0 0 -22px;
+}
+
+.container > .title :nth-child(2) {
+  color: #72cff9;
+  line-height: 1rem;
+  z-index: 1;
+}
+
+.game-container {
+  background-color: #2b0040;
+  border-radius: 2rem;
+  display: -ms-grid;
+  display: grid;
+  padding: 5em 7em;
+}
+
+.container > .game-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container > .game-container > p {
+  border-radius: 0.5em;
+  font-size: 1rem;
+  font-weight: 700;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  margin: 0;
+  padding: 0.8em;
+  text-align: center;
+  width: 15em;
+}
+
+.container > .game-container > p.player-x {
+  background-color: #72cff9;
+}
+
+.container > .game-container > p.player-o {
+  background-color: #dcbf3f;
+}
+
+.container > .game-container > button {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  padding: 0.8em;
+  width: 18em;
+}
+
+.container > .game-container > button:hover {
+  background-color: #c5a0d7;
+}
+
+.container > .actions {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  position: absolute;
+  bottom: 3em;
+  right: 3em;
+}
+
+/********** MEDIA QUERIES **********/
+/* Tablet size. (768px) */
+@media (max-width: 768px) {
+  .container > .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: -1.3em;
+    font-size: 5em;
+  }
+
+  .container > .title > p {
+    line-height: 1rem;
+    margin: 0.5em 0.1em 0.5em 0;
+  }
+
+  .container > .title :nth-child(2) {
+    z-index: 0;
+  }
+
+  .container > .actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: -4em;
+    right: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .container > .game-container {
+    padding: 5em 4em;
+  }
+}
+
+/* Large Mobile size. (425px) */
+@media (max-width: 415px) {
+  .container {
+    border-radius: 0;
+    height: 100vh;
+    padding: 4em 0 1em;
+    width: 100vw;
+  }
+
+  .container > .title {
+    top: -0.01em;
+    left: 0.4em;
+    font-size: 5em;
+  }
+
+  .container > .title > p {
+    line-height: 1rem;
+  }
+
+  .container > .actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: -1em;
+    right: 2em;
+  }
+}
+
+/* Small Mobile size. (320px) */
+@media (max-width: 375px) {
+  .container {
+    height: 100vh;
+    padding: 3em 0 0;
+  }
+
+  .container > .game-container {
+    padding: 4em 1em;
+  }
+
+  .container > .actions {
+    bottom: -1em;
+    right: 1em;
+  }
+}

@@ -1,0 +1,28 @@
+/********** GOOGLE FONTS **********/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@700&display=swap");
+
+/********** CSS **********/
+body {
+  background-color: #43115b;
+  font-family: "Fredoka", sans-serif;
+  font-display: optional;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 2vh 3.5vw;
+}
+
+/********** MEDIA QUERIES **********/
+/* Tablet size. (768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 10vh 3.5vw 8vh;
+  }
+}
+
+/* Large Mobile size. (425px) */
+@media (max-width: 415px) {
+  body {
+    padding: 0;
+    transition: padding 150ms ease-in-out;
+  }
+}

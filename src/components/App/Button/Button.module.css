@@ -1,0 +1,54 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 5 version
+*/
+
+/********** CSS **********/
+.button,
+.button:visited {
+  background-color: #ebf0f4;
+  background-image: -webkit-linear-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f6f8fa),
+    color-stop(90%, #ebf0f4)
+  );
+  background-image: -o-linear-gradient(top, #f6f8fa, #ebf0f4 90%);
+  background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
+  border: 1px solid;
+  border-color: #ccd1d5;
+  border-radius: 0.25em;
+  color: #24292f;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 0.4em;
+  -ms-grid-column-align: end;
+  justify-self: end;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  overflow: hidden;
+  padding: 0.3em 0.5em 0.1em 0.4em;
+  text-decoration: none;
+  width: auto;
+  max-width: 1.4em;
+  -webkit-transition: max-width 1000ms ease-in-out;
+  -o-transition: max-width 1000ms ease-in-out;
+  transition: max-width 1000ms ease-in-out;
+}
+
+.button.hovered {
+  max-width: 15em;
+}
+
+.button > :nth-child(2) {
+  white-space: nowrap;
+}
