@@ -28,6 +28,7 @@
   font-size: 20em;
   font-weight: 700;
   overflow: hidden;
+  pointer-events: none;
   position: absolute;
   bottom: -25px;
   left: 0;
@@ -116,8 +117,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: -1.3em;
     font-size: 5em;
+    top: -1.3em;
   }
 
   .container > .title > p {
